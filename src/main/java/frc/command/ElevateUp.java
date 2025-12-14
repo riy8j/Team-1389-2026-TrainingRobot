@@ -7,7 +7,7 @@ public class ElevateUp extends Command {
     public ElevatorSubsystem ElevatorSubsystem;
 
     public ElevateUp(ElevatorSubsystem ElevatorSubsystem) {
-        this.ElevatorSubsystem = ElevatorSpeed;
+        this.ElevatorSubsystem = ElevatorSubsystem;
     }
 
     public void initialize(){
@@ -17,16 +17,18 @@ public class ElevateUp extends Command {
     @Override
     public void execute() {
         //This gets called multiple times a second. Put something here that should be constantly called such as setting motor speed. 
+        ElevatorSubsystem.setSpeed(12);
     }
 
     @Override
     public void end(boolean interrupted) {
-        //this gets called when the input stops being given. So you should put a stop motor command here for example. 
+        //this gets called when the input stops being given. So you should put a stop motor command here for example.
+        ElevatorSubsystem.stop();
     }
 
     @Override
     public boolean isFinished(){
         //If true is returned, the command will stop being run. Can be used to check if a encoder is at right place or limit switch is press (for example)
-        return Boolean;
+        return false;
     }
 }
