@@ -26,4 +26,5 @@ public class RobotMap {
     public static final int LowerShooterPort = 12;
     //Shooter Speed
     public static final double ShooterSpeed = 0.75;
+    public static final double ElevatorSpeed = 0.5;
 }

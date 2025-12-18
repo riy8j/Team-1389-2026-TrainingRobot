@@ -12,7 +12,7 @@ public class ShooterSubsystem extends SubsystemBase{
         LowerMotor = new TalconFX(RobotMap.LowerShooterPort);
     }
 
-    public void run(double shooterSpeed){
+    public void run(){
         UpperMotor.setControl(new VoltageOut(RobotMap.ShooterSpeed));
         LowerMotor.setControl(new VoltageOut(-RobotMap.ShooterSpeed));
     }

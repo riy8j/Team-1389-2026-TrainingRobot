@@ -4,10 +4,10 @@ import frc.subsystems.ElevatorSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.RobotMap.ElevatorSpeed;
 
-public class ElevateUp extends Command {
+public class ElevateDown extends Command {
     public ElevatorSubsystem ElevatorSubsystem;
 
-    public ElevateUp(ElevatorSubsystem ElevatorSubsystem) {
+    public ElevateDown(ElevatorSubsystem ElevatorSubsystem) {
         this.ElevatorSubsystem = ElevatorSubsystem;
     }
 
@@ -18,7 +18,7 @@ public class ElevateUp extends Command {
     @Override
     public void execute() {
         //This gets called multiple times a second. Put something here that should be constantly called such as setting motor speed. 
-        ElevatorSubsystem.setSpeed(ElevatorSpeed);
+        ElevatorSubsystem.setSpeed(-ElevatorSpeed);
     }
 
     @Override

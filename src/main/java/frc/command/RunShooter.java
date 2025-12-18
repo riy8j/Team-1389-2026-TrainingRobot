@@ -4,7 +4,7 @@ import frc.subsystems.ShooterSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 
 public class RunShooter extends Command {
-    public GenericSubsystem genericSubsystem;
+    public ShooterSubsystem ShooterSubsystem;
 
     public RunShooter(ShooterSubsystem shooterSubsystem) {
         this.ShooterSubsystem = shooterSubsystem;
