@@ -14,8 +14,16 @@ public class RobotMap {
     public static final int ElevatorPort1 = 9;
     public static final int ElevatorPort2 = 10;
 
-    //other can ids
+    //Elevator can ids
     public static final int ElevatorCanID1 = 9;
     public static final int ElevatorCanID2 = 10;
 
+    //Shooter Can Ids
+    public static final int UpperShooterCanID = 11;
+    public static final int LowerShooterCanID = 12;
+    //Shooter motor ports
+    public static final int UpperShooterPort = 11;
+    public static final int LowerShooterPort = 12;
+    //Shooter Speed
+    public static final double ShooterSpeed = 0.75;
 }
